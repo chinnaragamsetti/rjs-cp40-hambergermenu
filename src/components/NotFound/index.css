@@ -1,0 +1,24 @@
+/* Write your CSS here */
+.notfoundcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.imagecont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeimage {
+  width: 25%;
+  height: 30%;
+}
+.lost {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.losttext {
+  font-size: 10px;
+  color: lightgrey;
+}

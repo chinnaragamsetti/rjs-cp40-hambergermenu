@@ -1,0 +1,14 @@
+/* Write your CSS here */
+.homecontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.imagecont {
+  display: flex;
+  justify-content: center;
+}
+.homeimage {
+  width: 40%;
+  height: 70%;
+}

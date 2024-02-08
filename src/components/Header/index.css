@@ -1,0 +1,48 @@
+/* Write your CSS here */
+.headercont {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100vw;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.humicon {
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+}
+.popupcont {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.crossimage {
+  width: 20px;
+  height: 20px;
+  display: flex;
+
+  align-self: flex-end;
+}
+.subcont {
+  display: flex;
+  flex-direction: column;
+}
+.popcont {
+  display: flex;
+  flex-direction: row;
+}
+.popimage {
+  width: 30px;
+  height: 30px;
+}
+.poptext {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
