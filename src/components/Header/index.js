@@ -7,6 +7,8 @@ import Popup from 'reactjs-popup'
 
 import {Link} from 'react-router-dom'
 
+import './index.css'
+
 const Header = () => (
   <div className="headercont">
     <Link to="/">
