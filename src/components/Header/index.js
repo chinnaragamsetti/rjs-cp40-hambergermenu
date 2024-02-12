@@ -1,10 +1,9 @@
 // Write your code here
 import {GiHamburgerMenu} from 'react-icons/gi'
-import {IoMdClose, IoMdHome} from 'react-icons/io'
+import {AiFillHome} from 'react-icons/ai'
+import {IoMdClose} from 'react-icons/io'
 import {BsInfoCircleFill} from 'react-icons/bs'
-
 import Popup from 'reactjs-popup'
-
 import {Link} from 'react-router-dom'
 
 import './index.css'
@@ -26,21 +25,31 @@ const Header = () => (
           data-testid="hamburgerIconButton"
         />
       }
+      className="popup-content"
     >
       {close => (
         <div className="popupcont">
-          <IoMdClose className="popimage" onClick={() => close()} />
-          <div className="subcont">
-            <Link to="/" className="popcont">
-              <IoMdHome className="popimage" />
-              <p className="poptext">Home</p>
-            </Link>
-            <Link to="/about" className="popcont">
-              <BsInfoCircleFill className="popimage" />
-
-              <p className="poptext">About</p>
-            </Link>
+          <div className="crossimagecont">
+            <IoMdClose
+              className="crossimage"
+              testid="closeButton"
+              onClick={() => close()}
+            />
           </div>
+          <ul className="subcont">
+            <li>
+              <Link to="/" className="popcont">
+                <AiFillHome className="popimage" />
+                <p className="poptext">Home</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="popcont">
+                <BsInfoCircleFill className="popimage" />
+                <p className="poptext">About</p>
+              </Link>
+            </li>
+          </ul>
         </div>
       )}
     </Popup>

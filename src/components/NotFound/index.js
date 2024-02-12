@@ -11,9 +11,10 @@ const NotFound = () => (
         alt="not found"
         className="homeimage"
       />
-      <p className="lost">Lost Your Way?</p>
+      <h1 className="lost">Lost Your Way?</h1>
       <p className="losttext">
-        Sorry,we cant find that page.Youll find lots to explore on the home page
+        Sorry, we cannot find that page. You will find lots to explore on the
+        home page
       </p>
     </div>
   </div>
