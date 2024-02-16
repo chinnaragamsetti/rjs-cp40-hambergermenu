@@ -3,7 +3,9 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiFillHome} from 'react-icons/ai'
 import {IoMdClose} from 'react-icons/io'
 import {BsInfoCircleFill} from 'react-icons/bs'
+
 import Popup from 'reactjs-popup'
+
 import {Link} from 'react-router-dom'
 
 import './index.css'
@@ -20,10 +22,7 @@ const Header = () => (
     <Popup
       modal
       trigger={
-        <GiHamburgerMenu
-          className="humicon"
-          data-testid="hamburgerIconButton"
-        />
+        <GiHamburgerMenu className="humicon" data-="hamburgerIconButton" />
       }
       className="popup-content"
     >
@@ -32,8 +31,8 @@ const Header = () => (
           <div className="crossimagecont">
             <IoMdClose
               className="crossimage"
-              testid="closeButton"
               onClick={() => close()}
+              data-testid="closeButton"
             />
           </div>
           <ul className="subcont">
