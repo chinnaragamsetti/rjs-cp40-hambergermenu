@@ -22,7 +22,10 @@ const Header = () => (
     <Popup
       modal
       trigger={
-        <GiHamburgerMenu className="humicon" data-="hamburgerIconButton" />
+        <GiHamburgerMenu
+          className="humicon"
+          data-testid="hamburgerIconButton"
+        />
       }
       className="popup-content"
     >
